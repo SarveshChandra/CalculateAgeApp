@@ -1,0 +1,19 @@
+<div>
+  <h1>Calculation App</h1>
+<form name="ageForm" ng-submit="diffCtrl.calculate()">
+  Date: <input name="date1" label="Date" ng-model="diffCtrl.d1"></input>
+  Month: <input name="date1month" label="Date" ng-model="diffCtrl.d1m"></input>
+  Year: <input name="date1year" label="Date" ng-model="diffCtrl.d1y"></input>
+  <br><br>
+  Date: <input name="date2" label="Date" ng-model="diffCtrl.d2"></input>
+  Month: <input name="date2month" label="Date" ng-model="diffCtrl.d2m"></input>
+  Year: <input name="date2year" label="Date" ng-model="diffCtrl.d2y"></input>
+  <br><br>
+  <button action=submit>Go</button> <button href ng-click="diffCtrl.reset()">Reset</button>
+<br><br>
+As of now, you are: {{diffCtrl.years}} years, {{diffCtrl.months}} months, {{diffCtrl.remDays}} days of age<br>
+Your age in days: {{diffCtrl.days}}<br>
+Your age in hours: {{diffCtrl.hours}}<br>
+Your age in minutes: {{diffCtrl.minutes}}  
+</form>
+</div>
